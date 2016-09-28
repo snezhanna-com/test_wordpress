@@ -1,0 +1,46 @@
+{
+  "name"        : "test_worpress",
+  "description" : "Test project",
+
+  "authors"     : [
+    {
+      "name"    : "Snezhanna",
+      "email"   : "snezhanna.mohnacheva@computoolsglobal.com",
+      "homepage": "http://computoolsglobal.com"
+    }
+  ],
+
+  "type": "project",
+
+  "repositories": [
+    {
+      "type": "composer",
+      "url" : "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url" : "https://rarst.net"
+    }
+  ],
+
+  "config": {
+    "vendor-dir": "wp-content/vendor"
+  },
+
+  "require": {
+    "php"                             : ">=5.5",
+    "johnpbloch/wordpress"            : ">=4.2",
+    "wpackagist-theme/twentyfifteen"  : "1.2",
+    "wpackagist-plugin/nginx-helper"  : "1.9.3"
+  },
+
+  "extra": {
+    "wordpress-install-dir": "wordpress",
+
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+  }
+
+}
