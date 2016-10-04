@@ -1,6 +1,6 @@
 # Instructions 
 
-Use WordPress Nonce an object oriented way
+Use WordPress Nonce in an object oriented way
 
 
 **Installation**:
